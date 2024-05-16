@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:predictiva/constants/colors.dart';
 import 'package:intl/intl.dart';
+import 'package:predictiva/utils/captlize.dart';
 
 class Tradecontainer extends StatelessWidget {
   String coinlabel;
@@ -50,7 +51,7 @@ class Tradecontainer extends StatelessWidget {
                     borderRadius: BorderRadius.circular(100),
                     border: Border.all(color: AppColors.redcolor)),
                 child: Text(
-                  type,
+                  type.capitalize(),
                   style: TextStyle(
                       fontSize: 14,
                       fontFamily: 'inter',

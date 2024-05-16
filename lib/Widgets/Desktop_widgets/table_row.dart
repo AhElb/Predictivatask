@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:predictiva/constants/colors.dart';
 import 'package:intl/intl.dart';
+import 'package:predictiva/utils/captlize.dart';
 import 'package:predictiva/utils/media_query_values.dart';
 
 class TableRowwidgit {
@@ -83,7 +84,7 @@ class TableRowwidgit {
                       borderRadius: BorderRadius.circular(100),
                       border: Border.all(width: 1, color: AppColors.textred)),
                   child: Text(
-                    action!,
+                    action!.capitalize(),
                     style: TextStyle(
                       color: AppColors.textred,
                       fontWeight: FontWeight.w400,
