@@ -124,7 +124,7 @@ class AppBloc extends Bloc<AppEvent, AppState> {
         } else if (startdate == null) {
           return symbol.contains(searcsymbol) &&
               price.contains(searcprice) &&
-              date.isBefore(enddate!);
+              date.isBefore(enddate);
         } else {
           return symbol.contains(searcsymbol) &&
               price.contains(searcprice) &&
